@@ -15,7 +15,7 @@ api = Api(app)
 class MyObject(Resource):
 
     def post(self):
-        new_myobject = request.json
+        # new_myobject = request.json
         myobject_collection = app.db.myobjects
         result = myobject_collection.insert_one(request.json)
 
